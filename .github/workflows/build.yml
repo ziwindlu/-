@@ -24,10 +24,10 @@ jobs:
 
     - name: Build with PyInstaller
       run: |
-        pyinstaller --onefile --windowed --name="飘字特效" main.py
+        pyinstaller --onefile --windowed --name="FloatingText" main.py
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name:飘字特效-Windows
-        path: dist/飘字特效.exe
+        name: FloatingText-Windows
+        path: dist/FloatingText.exe
